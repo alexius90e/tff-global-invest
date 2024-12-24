@@ -1,40 +1,344 @@
-html {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  scroll-behavior: smooth;
+@charset "UTF-8";
+/*
+Theme Name: Tff Global Investment
+Author: Ivan Baranoff
+Description: A custom theme for Tff Global Investment.
+Version: 1.0
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  --bs-font-sans-serif: "Montserrat", sans-serif;
+  --bs-font-pro-display: "SF Pro Display";
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 25.6px;
+  --color-gray-5: #555555;
+  --color-gray: #444444;
+  --bs-body-color: var(--color-gray);
+  --bs-heading-color: #000000;
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f7;
+  --color-green: #0b6660;
+  --color-green-light: rgba(11, 102, 96, 0.6);
 }
 
-body {
-  position: relative;
-  margin: 0;
-  overflow-y: scroll;
-  color: #181d42;
-  background-color: #ffffff;
-}
-
-a,
-button,
-input,
-textarea {
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.text-normal {
+  font-size: 1rem;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1160px;
+}
+
+.text-sm {
+  font-size: 14px !important;
+}
+
+.text-xs {
+  font-size: 12px !important;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+* {
+  box-sizing: border-box; /* Ensure padding and borders don’t exceed element dimensions */
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1,
+.h1 {
+  font-size: 52px;
+  line-height: 110%;
+  margin: 0;
+  color: #555555;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  line-height: 35.2px;
+  font-weight: 400;
+}
+
+h3,
+.h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.25px;
+}
+
+p {
+  margin: 10px 0 0;
+}
+
+.g-40-px,
+.gy-40-px {
+  --bs-gutter-y: 40px;
+}
+
+.g-40-px,
+.gx-40-px {
+  --bs-gutter-x: 40px;
+}
+
+.g-20-px,
+.gx-20-px {
+  --bs-gutter-x: 20px;
+}
+
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, border 0.3s;
+  padding: 10px 43px;
+  line-height: 19.5px;
+  border: 1px solid var(--color-green);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn:hover {
+  background: var(--color-gray);
+  color: #fff;
+  border: 1px solid var(--color-gray);
+}
+
+.btn-primary {
+  background: var(--color-green);
+  --bs-btn-disabled-bg: var(--color-gray-5);
+  --bs-btn-disabled-border-color: var(--color-gray-5);
+  --bs-btn-active-bg: #598f8c;
+  --bs-btn-active-border-color: #598f8c;
+}
+
+.btn-white {
+  background: var(--color-white);
+  color: var(--color-green);
+  border: 1px solid var(--color-white);
+}
+
+.btn-white-outline {
+  border: 1px solid var(--color-white);
+}
+
+.underlined {
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.carousel-control {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 22px;
+  opacity: 1;
+  margin-right: 20px;
+}
+
+.carousel-control-icon:hover circle {
+  stroke: var(--color-green);
+  fill: var(--color-green);
+}
+
+.carousel-control-icon:hover path {
+  fill: var(--color-white);
+}
+
+.btn--style {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+@media (max-width: 575.9px) {
+  .btn--style {
+    border-radius: 6px;
+  }
+  html,
+  .text-sm,
+  .text-xs {
+    font-size: 12px !important;
+    line-height: 160% !important;
+  }
+  b,
+  strong {
+    font-weight: 600;
+  }
+  h1,
+  .h1 {
+    font-size: 32px;
+  }
+  h3,
+  .h3 {
+    font-size: 23px;
+  }
+  .underlined {
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+}
+.main {
+  padding: 20px 0;
+}
+@media (max-width: 576px) {
+  .main {
+    padding: 10px 0;
+  }
+}
+
+.oppurtinnities {
+  margin: 0 0 60px;
+}
+.oppurtinnities__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  padding: 40px 20px 20px;
   box-sizing: border-box;
+  border-radius: 8px;
+  background: url(../assets/city-bg.jpg) center/cover no-repeat;
+}
+@media (max-width: 576px) {
+  .oppurtinnities__banner {
+    align-items: flex-end;
+    justify-content: flex-start;
+    min-height: 300px;
+    padding: 20px 10px;
+  }
+}
+.oppurtinnities__banner-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .oppurtinnities__banner-title {
+    font-size: 32px;
+    text-align: left;
+  }
+}
+.oppurtinnities__title {
+  margin: 30px 0;
+  padding: 0 0 20px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  color: #555;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
+@media (max-width: 576px) {
+  .oppurtinnities__title {
+    margin: 20px 0;
+    padding-bottom: 16px;
+  }
+}
+.oppurtinnities__projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .oppurtinnities__projects {
+    gap: 20px;
+  }
+}
+.oppurtinnities__project {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(33.3333333333% - 26.6666666667px);
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .oppurtinnities__project {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+@media (max-width: 576px) {
+  .oppurtinnities__project {
+    flex: 1 1 100%;
+  }
+}
+.oppurtinnities__project-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 9/5;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .oppurtinnities__project-figure {
+    aspect-ratio: 3/2;
+  }
+}
+.oppurtinnities__project-figure-image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+.oppurtinnities__project-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 22px;
+  border-radius: 8px;
+  background-color: #f5f5f7;
+}
+.oppurtinnities__project-info-title {
+  flex: 1 0 72px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  color: #444;
+}
+@media (max-width: 576px) {
+  .oppurtinnities__project-info-title {
+    flex: 1 0 44px;
+    font-size: 20px;
+  }
+}
+.oppurtinnities__project-info-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #444;
 }
