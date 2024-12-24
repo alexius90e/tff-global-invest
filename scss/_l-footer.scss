@@ -1,2 +1,78 @@
 .footer {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 9px 0 20px;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 10px 0;
+      border: none;
+    }
+  }
+
+  &__disclaimer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #444;
+
+    @include laptop {
+      font-size: 10px;
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      flex: 1 1 100%;
+      gap: 30px;
+      order: 1;
+
+      &:before {
+        content: '';
+        display: block;
+        display: none;
+        flex: 0 0 auto;
+        width: 70px;
+        aspect-ratio: 70 / 38;
+        background: url(../assets/footer-logo.svg) left center / 70px no-repeat;
+
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__policy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include mobile {
+      justify-content: flex-start;
+      flex: 1 1 100%;
+      order: 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+
+    &-link {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: #444;
+      text-decoration: none;
+
+      @include laptop {
+        font-size: 10px;
+      }
+    }
+  }
 }
