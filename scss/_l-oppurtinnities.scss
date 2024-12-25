@@ -1,5 +1,6 @@
 .oppurtinnities {
-  margin: 0 0 80px;
+  margin: 0 0 60px;
+  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
 
   &__banner {
@@ -121,6 +122,17 @@
         font-size: 12px;
         line-height: 140%;
         color: #444;
+      }
+    }
+
+    &-more {
+      @include mobile {
+        display: none;
+      }
+
+      & .btn {
+        padding: 10px 30px;
+        border-radius: 4px;
       }
     }
   }

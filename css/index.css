@@ -289,7 +289,8 @@ p {
 }
 
 .oppurtinnities {
-  margin: 0 0 80px;
+  margin: 0 0 60px;
+  padding-top: 20px;
   font-family: "Montserrat", sans-serif;
 }
 .oppurtinnities__banner {
@@ -413,9 +414,19 @@ p {
   line-height: 140%;
   color: #444;
 }
+@media (max-width: 576px) {
+  .oppurtinnities__project-more {
+    display: none;
+  }
+}
+.oppurtinnities__project-more .btn {
+  padding: 10px 30px;
+  border-radius: 4px;
+}
 
 .any-questions {
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 18px;
 }
 .any-questions__wrapper {
   display: flex;
@@ -569,6 +580,7 @@ p {
 
 .project-details {
   margin: 0 0 80px;
+  padding-top: 20px;
   font-family: "Montserrat", sans-serif;
 }
 .project-details__banner {
