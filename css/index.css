@@ -514,6 +514,10 @@ p {
           text-decoration-skip-ink: none;
   color: #444;
 }
+.any-questions__callback-form .btn {
+  padding: 10px 30px;
+  border-radius: 4px;
+}
 .any-questions__manager {
   display: flex;
   align-items: center;
