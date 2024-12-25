@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TFF Global Investments</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/custom-bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <section class="auth register">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="auth__body">
+                <div class="auth__forms">
+                  <div class="auth__forms-auth">
+                    <h3 class="auth__forms-title">Вход</h3>
+
+                    <form class="auth__forms-form">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="authLogin"
+                          placeholder="Логин"
+                          required
+                        />
+                        <label for="floatingInput">Логин</label>
+                      </div>
+
+                      <div class="form-floating">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="authPassword"
+                          placeholder="Пароль"
+                          required
+                        />
+                        <label for="floatingInput">Пароль</label>
+                      </div>
+
+                      <div class="auth__forms-form-submit">
+                        <button class="btn btn-light">Войти в кабинет</button>
+                      </div>
+                    </form>
+
+                    <div class="auth__forms-auth-restore">
+                      <a class="auth__forms-auth-restore-link" href="#">Восстановить пароль</a>
+                    </div>
+
+                    <div class="auth__forms-auth-register">
+                      <button class="auth__forms-auth-register-button auth__toggler">
+                        Зарегистрироваться
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="auth__forms-reg">
+                    <h3 class="auth__forms-title">Регистрация</h3>
+                    <div class="auth__forms-description">Доступ к инвестиционным проектам</div>
+
+                    <form class="auth__forms-form">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="regName"
+                          placeholder="Имя *"
+                          required
+                        />
+                        <label for="floatingInput">Имя *</label>
+                      </div>
+
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="regEmail"
+                          placeholder="E-mail *"
+                          required
+                        />
+                        <label for="floatingInput">E-mail *</label>
+                      </div>
+
+                      <div class="form-floating">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="regPhone"
+                          placeholder="Телефон *"
+                          required
+                        />
+                        <label for="floatingInput">Телефон *</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Осуществляя регистрацию в личный кабинет Вы соглашаетесь с политикой
+                          конфиденциальности
+                        </label>
+                      </div>
+
+                      <div class="auth__forms-form-submit">
+                        <button class="btn btn-primary">Зарегистрироваться</button>
+                      </div>
+                    </form>
+
+                    <div class="auth__forms-reg-login">
+                      <span>Уже зарегистрированы? </span>
+                      <button class="auth__forms-reg-login-button auth__toggler">Войти тут</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="auth__info">
+                  <div class="auth__info-auth">
+                    <div class="auth__info-wrapper">
+                      <figure class="auth__info-logo">
+                        <img
+                          class="auth__info-logo-image"
+                          src="./assets/footer-logo.svg"
+                          alt="logo"
+                        />
+                      </figure>
+
+                      <div class="auth__info-text">
+                        <b>Добро пожаловать в личный кабинет инвестора!</b>
+                        <span>Получите эксклюзивный доступ к закрытым инвестиционным проектам</span>
+                      </div>
+
+                      <div class="auth__info-controls">
+                        <button class="btn btn-light auth__toggler">Войти в кабинет</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="auth__info-reg">
+                    <div class="auth__info-wrapper">
+                      <figure class="auth__info-logo">
+                        <img
+                          class="auth__info-logo-image"
+                          src="./assets/footer-logo.svg"
+                          alt="logo"
+                        />
+                      </figure>
+
+                      <div class="auth__info-text">
+                        <b>Зарегистрируйтесь уже сейчас и получите</b>
+                        <span> эксклюзивный доступ к закрытым инвестиционным проектам</span>
+                      </div>
+
+                      <div class="auth__info-controls">
+                        <button class="btn btn-primary auth__toggler">Зарегистрироваться</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
