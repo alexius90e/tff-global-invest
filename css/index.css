@@ -856,6 +856,9 @@ p {
   transition: background-color ease-in-out 2.5s;
   will-change: background-color;
 }
+.auth .container {
+  max-width: 1224px;
+}
 .auth.register {
   background-color: rgba(255, 255, 255, 0.01);
 }
@@ -882,7 +885,7 @@ p {
   bottom: 0;
   z-index: 50;
   display: block;
-  width: calc(50% + 40px);
+  width: calc(50% + 20px);
   background-color: #0b6660;
   transition-property: width, left;
   transition-timing-function: ease-in-out;
@@ -895,8 +898,8 @@ p {
   }
 }
 .register .auth__body::before {
-  left: calc(50% + 40px);
-  width: calc(50% - 40px);
+  left: calc(50% + 20px);
+  width: calc(50% - 20px);
 }
 @media (max-width: 768px) {
   .register .auth__body::before {
@@ -906,8 +909,8 @@ p {
 }
 .auth__forms {
   position: relative;
-  flex: 0 0 calc(50% + 40px);
-  max-width: calc(50% + 40px);
+  flex: 0 0 calc(50% + 20px);
+  max-width: calc(50% + 20px);
   min-height: 100dvh;
   overflow: hidden;
 }
@@ -924,7 +927,7 @@ p {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  padding: 40px 80px;
+  padding: 40px 80px 48px;
   box-sizing: border-box;
   transition-property: opacity, transform;
   transition-timing-function: ease-in-out;
@@ -1054,6 +1057,11 @@ p {
     font-size: 40px;
   }
 }
+@media (max-width: 576px) {
+  .auth__forms-title {
+    font-size: 32px;
+  }
+}
 .auth__forms-auth .auth__forms-title {
   color: #ffffff;
 }
@@ -1061,12 +1069,17 @@ p {
   color: #555;
 }
 .auth__forms-description {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   text-align: center;
   color: #000;
+}
+@media (max-width: 576px) {
+  .auth__forms-description {
+    font-size: 12px;
+  }
 }
 .auth__forms-auth .auth__forms-description {
   color: #ffffff;
@@ -1081,7 +1094,7 @@ p {
   margin-top: 0 !important;
 }
 .auth__forms-form .form-floating {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 @media (max-width: 992px) {
   .auth__forms-form .form-floating {
@@ -1089,26 +1102,45 @@ p {
   }
 }
 .auth__forms-form .form-floating label {
-  padding: 8px 0 0 8px;
+  padding: 4px 0 0;
 }
 .auth__forms-form .form-control {
-  min-height: 46px;
-  height: 46px;
+  min-height: 48px;
+  height: 48px;
   padding: 0;
   padding: 0 24px 12px 0;
   border: none;
   border-radius: 0;
 }
 .auth__forms-form .form-check {
+  display: flex;
+  gap: 13px;
   margin: 11px 0 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
 }
+.auth__forms-form .form-check-input {
+  width: 16px;
+  height: 16px;
+}
+.auth__forms-form .form-check-label {
+  max-width: 324px;
+}
 .auth__forms-form-submit {
   display: flex;
   justify-content: center;
   margin: 30px 0 0;
+}
+.auth__forms-form-submit .btn {
+  padding: 10px 30px;
+  border-radius: 4px;
+}
+@media (max-width: 576px) {
+  .auth__forms-form-submit .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 .auth__forms-auth .auth__forms-form .form-floating label {
   color: #ffffff;
@@ -1198,7 +1230,7 @@ p {
 .auth__info-text {
   display: flex;
   flex-direction: column;
-  margin: 30px 0;
+  margin: 30px 0 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
@@ -1216,4 +1248,11 @@ p {
 .auth__info-controls {
   display: flex;
   justify-content: center;
+}
+.auth__info-controls .btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
 }
