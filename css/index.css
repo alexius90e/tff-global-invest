@@ -209,10 +209,6 @@ p {
     margin-bottom: 20px;
   }
 }
-.container {
-  max-width: 1184px;
-}
-
 .footer__wrapper {
   display: flex;
   align-items: center;
@@ -540,6 +536,7 @@ p {
 }
 .any-questions__manager-photo {
   flex: 0 0 260px;
+  margin: 0;
 }
 @media (max-width: 576px) {
   .any-questions__manager-photo {
