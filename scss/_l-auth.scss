@@ -1,11 +1,17 @@
 .auth {
-  margin: 0 -12px;
+  margin: 0 ;
   background-color: rgba($color: #ffffff, $alpha: 0);
   transition: background-color ease-in-out 2.5s;
   will-change: background-color;
 
+ 
+
   & .container {
-    max-width: 1224px;
+    max-width: 1200px;
+
+    & .col-12 {
+        padding: 0;
+    }
   }
 
   &.register {
@@ -94,6 +100,10 @@
 
       @include tablet {
         padding: 72px 20px 40px;
+      }
+
+      @include mobile {
+        padding: 72px 10px 40px;
       }
 
       &::before {
@@ -279,6 +289,10 @@
         padding: 0 24px 12px 0;
         border: none;
         border-radius: 0;
+
+        @include mobile {
+          font-size: 14px;
+        }
       }
 
       & .form-check {
@@ -288,6 +302,10 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 140%;
+
+        @include mobile {
+          font-size: 10px;
+        }
 
         &-input {
           width: 16px;
@@ -304,6 +322,12 @@
         justify-content: center;
         margin: 30px 0 0;
 
+        @include mobile {
+          margin: 20px 0 0;
+
+        }
+
+
         & .btn {
           padding: 10px 30px;
           border-radius: 4px;
@@ -311,6 +335,10 @@
           @include mobile {
             width: 100%;
             box-sizing: border-box;
+          }
+
+          .auth__forms-auth & {
+            min-width: 260px;
           }
         }
       }
