@@ -1218,6 +1218,20 @@ p {
   transition-duration: 0.6s;
   will-change: opacity, transform;
 }
+.auth__info-auth::before, .auth__info-auth::after, .auth__info-reg::before, .auth__info-reg::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  display: block;
+  height: 1px;
+}
+.auth__info-auth::before, .auth__info-reg::before {
+  top: 20px;
+}
+.auth__info-auth::after, .auth__info-reg::after {
+  bottom: 20px;
+}
 .auth__info-auth {
   z-index: 100;
   transform: translate3d(110%, 0, 0);
@@ -1226,6 +1240,10 @@ p {
 .register .auth__info-auth {
   transform: translate3d(0, 0, 0);
   opacity: 1;
+}
+.auth__info-auth::before, .auth__info-auth::after {
+  content: "";
+  background-color: white;
 }
 .auth__info-reg {
   position: absolute;
@@ -1240,6 +1258,10 @@ p {
 .register .auth__info-reg {
   transform: translate3d(-110%, 0, 0);
   opacity: 0;
+}
+.auth__info-reg::before, .auth__info-reg::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .auth__info-wrapper {
   max-width: 340px;
